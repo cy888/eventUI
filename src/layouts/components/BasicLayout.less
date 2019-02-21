@@ -1,0 +1,36 @@
+
+.logo {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  white-space: nowrap;
+  position: relative;
+  left: -9px;
+  transition: 0.5s all;
+  padding: 20px;
+
+  &.hide{
+    visibility: hidden;
+    opacity: 0;
+    left: -50px;
+  }
+  img {
+    width: 40px;
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+  }
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+  &:hover{
+    color: #1890ff;
+  }
+}

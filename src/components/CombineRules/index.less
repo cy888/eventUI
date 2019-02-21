@@ -1,0 +1,71 @@
+
+@condition-square-size: 30px;
+@hozLineSize: 30px;
+@vertLineSiz: 20px;
+.orContainer{
+    margin: @vertLineSiz/2 0;
+    width: 100%;
+    text-align: center;
+}
+.andContainer {
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background: #f0f2f5;
+}
+.condition{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: @condition-square-size;
+    height: @condition-square-size;
+    line-height: @condition-square-size;
+    border-radius: 5px;
+    background: rgb(24, 144, 255);
+    position: relative;
+    margin: @vertLineSiz/2 @hozLineSize @vertLineSiz/2 0px;
+    .addNew {
+        &::before{
+            content:"+";
+            position: absolute;
+            right: 8px;
+            top: -2px;
+        }
+        cursor: pointer;
+        display: block;
+        font-size: 20px;
+        color:white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .hozLine{
+        display: inline-block;
+        width: @hozLineSize;
+        background: grey;
+        height: 2px;
+        position: absolute;
+        top: 13px;
+        right: -@hozLineSize;
+    }
+    .vertBottomLine{
+        display: inline-block;
+        width: 2px;
+        background: grey;
+        height: @vertLineSiz;
+        position: absolute;
+        bottom: -@vertLineSiz;
+        left: 13px;
+    }
+    .vertTopLine{
+        display: inline-block;
+        width: 2px;
+        background: grey;
+        height: @vertLineSiz;
+        position: absolute;
+        top: -@vertLineSiz;
+        left: 13px;
+    }
+}

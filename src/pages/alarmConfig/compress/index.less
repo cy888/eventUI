@@ -1,0 +1,19 @@
+@minHeight: 500px;
+
+.container{
+    display: flex;
+    .left{
+        height: @minHeight;
+        margin: 10px;
+        width: 400px;
+        overflow: hidden;
+        word-break:break-all; 
+    }
+    .right{
+        min-height: @minHeight;
+        background: #fff;
+        flex-grow: 1;
+        margin: 10px;
+    }
+}
+
