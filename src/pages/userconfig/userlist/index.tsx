@@ -28,7 +28,7 @@ const dataSource = [{
     username: 'a12345',
     name: '张工',
     phone: 13500000000,
-    email: 'chen@harmonycloud.com',
+    email: 'zhang@harmonycloud.com',
     department: '运维',
     operation: '删除  编辑'
 },
